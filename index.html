@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog clock</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            width: 100%;
+        }
+        #clock_frame{
+            position: relative;
+            width: 600px;
+            height: 600px;
+            background-image: url(clock.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            /* border: solid; */
+            margin: auto;
+            /* margin: auto; */
+            /* background-color: black; */
+        }
+        #clock_frame div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: left;
+            /* transform: rotate(270deg); */
+            /* transform: translate(-50% -50%); */
+        }
+        #hour{
+            width: 200px;
+            height: 14px;
+            background-color: black;
+        }
+        #minute{
+            width: 200px;
+            height: 9px;
+            background-color: #666666;
+        }
+        #second{
+            width: 200px;
+            height: 4px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="clock_frame">
+            <div id="hour"></div>
+            <div id="minute"></div>
+            <div id="second"></div>
+        </div>
+    </main>
+
+    <script src="Analog_Clock.js"></script>
+</body>
+</html>
